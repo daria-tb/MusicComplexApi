@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: musiccomplex_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1111
+      POSTGRES_DB: postgres
+    ports:
+      - "5435:5432"
+    volumes:
+      - music_data:/var/lib/postgresql/data
+
+volumes:
+  music_data:

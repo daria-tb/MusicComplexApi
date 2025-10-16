@@ -1,4 +1,3 @@
-
 namespace MusicComplexServices.Interfaces;
 
 public interface IGenericService<T> where T : class
